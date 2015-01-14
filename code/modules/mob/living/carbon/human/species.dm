@@ -309,7 +309,7 @@
 	poison_type = "oxygen"
 	insulated = 1
 
-	flags = NO_SCAN | IS_WHITELISTED
+	flags = IS_WHITELISTED
 
 	blood_color = "#2299FC"
 	flesh_color = "#808D11"

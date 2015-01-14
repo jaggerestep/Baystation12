@@ -1,10 +1,8 @@
 // BEGIN_INTERNALS
 /*
 MAP_ICON_TYPE: 0
-WINDOW: code\modules\ext_scripts\python.dm;code\setup.dm;code\TriDimension\controller.dm;code\TriDimension\Turfs.dm;code\TriDimension\Structures.dm
 LAST_COMPILE_VERSION: 501.1217
-DIR: code code\modules code\modules\ext_scripts code\TriDimension maps 
-FILE: code\TriDimension\Structures.dm
+DIR: maps 
 LAST_COMPILE_TIME: 1421122104
 AUTO_FILE_DIR: OFF
 */
