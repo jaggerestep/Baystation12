@@ -23,6 +23,18 @@
 		src << "\red The forum URL is not set in the server configuration."
 	return
 
+/client/verb/donate()
+	set name = "donate"
+	set desc = "Donate to the server."
+	set hidden = 1
+	if( config.donateurl )
+		if(alert("This will open the donation page in your browser. Are you sure?",,"Yes","No")=="No")
+			return
+		src << link(config.donateurl)
+	else
+		src << "\red The donation page is not set up in the server configuration."
+	return
+
 #define RULES_FILE "config/rules.html"
 /client/verb/rules()
 	set name = "Rules"
@@ -30,6 +42,14 @@
 	set hidden = 1
 	src << browse(file(RULES_FILE), "window=rules;size=480x320")
 #undef RULES_FILE
+
+#define ADMIN_FILE "config/admin_guide.html"
+/client/verb/adminguide()
+	set name = "Adminguide"
+	set desc = "Show Admin Guide."
+	set hidden = 1
+	src << browse(file(ADMIN_FILE), "window=adminguide;size=480x320")
+#undef ADMIN_FILE
 
 /client/verb/hotkeys_help()
 	set name = "hotkeys-help"
